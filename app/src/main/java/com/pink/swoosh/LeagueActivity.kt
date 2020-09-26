@@ -3,17 +3,19 @@ package com.pink.swoosh
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import kotlinx.android.synthetic.main.activity_league.*
 import kotlinx.android.synthetic.main.activity_main.*
 
-class LeagueActivity : AppCompatActivity() {
+class LeagueActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_league)
+    }
 
-        returnButton.setOnClickListener {
-            val mainIntent = Intent(this, MainActivity::class.java)
-            startActivity(mainIntent)
-        }
+    fun leagueNextClicked(view: View)
+    {
+        val skillActivity = Intent (this, SkillActivity::class.java)
+        startActivity(skillActivity)
     }
 }
