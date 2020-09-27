@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Controller.MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -64,7 +64,7 @@
         android:layout_height="61dp"
         android:layout_marginTop="32dp"
         android:singleLine="false"
-        android:text="@string/find_the_team_in_your_city_and_dominate_the_league"
+        android:text="@string/znajd_dru_yn_w_swoim_mie_cie_i_wygraj"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +80,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:text="@string/get_started"
+        android:text="@string/zaczynamy"
         android:textColor="@color/colorAccent"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"

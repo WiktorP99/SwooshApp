@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SkillActivity">
+    tools:context=".Controller.SkillActivity">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/montserrat"
-        android:text="@string/i_m_a"
+        android:text="@string/poziom_umiej_tno_ci"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,34 +57,36 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton7"
+            android:id="@+id/begginerBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_weight="1"
             android:background="@drawable/wsoosh_toggle"
             android:fontFamily="@font/montserrat"
-            android:text="@string/begginer"
+            android:onClick="onClickBeginner"
+            android:text="@string/pocz_tkuj_cy"
             android:textColor="#FFFFFF"
-            android:textOff="@string/begginer"
-            android:textOn="@string/begginer" />
+            android:textOff="@string/pocz_tkuj_cy"
+            android:textOn="@string/pocz_tkuj_cy" />
 
         <ToggleButton
-            android:id="@+id/toggleButton8"
+            android:id="@+id/ballerBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:background="@drawable/wsoosh_toggle"
             android:fontFamily="@font/montserrat"
-            android:text="@string/baller"
+            android:onClick="onClickBaller"
+            android:text="@string/zaawansowany"
             android:textColor="#FFFFFF"
-            android:textOff="@string/baller"
-            android:textOn="@string/baller" />
+            android:textOff="@string/zaawansowany"
+            android:textOn="@string/zaawansowany" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/skillFinishBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -92,7 +94,8 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:text="@string/finish"
+        android:onClick="onClickFinishClicked"
+        android:text="@string/wyszukaj"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
